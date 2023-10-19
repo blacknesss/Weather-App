@@ -1,11 +1,9 @@
-import { useState } from 'react';
 import place from '../assets/Frame.svg';
 import search from '../assets/Group 294.svg';
 import { useDispatch, useSelector } from 'react-redux';
 import { loadState } from '../actions';
 
 function BgRight__Header() {
-    const [error, setError] = useState('');
     const data = useSelector(state => state.data);
     const city = useSelector(state => state.city);
     const dispatch = useDispatch()
@@ -62,7 +60,6 @@ function BgRight__Header() {
     return ( 
         <div className="BgRight__Header">
             <img src={place} alt="tech"/>
-            <p>{error}</p>
             <h1 onClick={inputVisible} className="delhi dn">{data !== undefined ? data.name : 'Set Country'}
             {data !== undefined ? ', '+data.sys.country : ''}</h1>
 

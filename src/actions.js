@@ -1,6 +1,6 @@
 const API_KEY = '8194d32d6d2dbf03c77d88bdaf26feb9';
 
-export const loadState = (city, setError) =>{
+export const loadState = (city) =>{
 
 
     return (dispatch) => {
@@ -11,13 +11,6 @@ export const loadState = (city, setError) =>{
                     type: 'data/item',
                     payload: json
                 })
-      }).catch( err => {
-        if(err.response.cod == 404){
-            setError('Invalid City Name')
-        }else {
-            setError('')
-        }
-        console.log(err)
       })
     }
 };

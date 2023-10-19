@@ -1,7 +1,6 @@
 import group from '../assets/Group 650.svg';
 import line17 from '../assets/Line 17.svg';
 
-
 function BgLeft__Footer() {
     let offset = 0;
 
@@ -13,7 +12,6 @@ function BgLeft__Footer() {
         }
         containerF.style.transform = `translateX(${-offset}px)`;
     }
-
 
     return ( 
         <div className="Footer">
