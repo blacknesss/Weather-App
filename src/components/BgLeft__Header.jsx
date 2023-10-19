@@ -1,16 +1,8 @@
-import { useState } from 'react';
 import img1 from '../assets/WeatherIcon - 2-40.svg'
 
-function BgLeft__Header() {
-    const [check, setCheck] = useState(true)
+function BgLeft__Header({check, clickC, clickF, handlerCheckbox}) {
+    
 
-    const anim1 = () =>{
-        
-
-    }
-    const handlerCheckbox = (e) =>{
-        e.preventDefault();
-    }
 
     return ( 
         <div className='BgLeft__Header'>
@@ -19,11 +11,12 @@ function BgLeft__Header() {
             className='checkbox1' 
             type="checkbox" 
             id="check"
-            
+            checked = {check}
+            onChange={handlerCheckbox}
             />
             <label htmlFor='check' className='FC' >
-                <p className='F'>F</p>
-                <p className='C'>C</p>
+                <p className='F' onClick={clickF}>F</p>
+                <p className='C' onClick={clickC}>C</p>
             </label>
         </div>
      );

@@ -77,7 +77,7 @@ code {
   background: rgba(255, 255, 255, 0.18);
 }
 .checkbox1{
-  /* display: none; */
+  display: none;
 }
 input:checked + .FC::before{
   transform: translateX(45px);

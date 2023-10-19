@@ -4,7 +4,7 @@ import hum from '../assets/hum.svg';
 import rain from '../assets/Group 656.svg'
 import { useSelector } from 'react-redux';
 
-function BgLeft__Main() {
+function BgLeft__Main({check}) {
 
     const data = useSelector(state => state.data)
 
@@ -82,7 +82,7 @@ let c = data !== undefined ? data.main.temp : ''
 
     return ( 
         <div>
-            <h1 className="line2">{Math.round(data !== undefined ? data.main.temp : '')}<span className='upper-mini'>° C</span></h1>
+            <h1 className="line2">{Math.round(check ? c : cToF())}<span className='upper-mini'>° C</span></h1>
             <p className="line3">{day}{changeTH()} {getMonth()} '{getDate()}</p>
             <p className="line4">{changeDayOf()} | {time}</p>
             <div style={{display:"flex"}}>
