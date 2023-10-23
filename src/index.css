@@ -160,6 +160,7 @@ input:checked + .FC::before{
   z-index: 1;
   column-gap: 4em;
   display: flex;
+  transition: all .7s ease-in-out;
 }
 .container-f{
   display: flex;
@@ -357,4 +358,94 @@ cursor: pointer;
   transform: translateY(-130px);
 }
 
-/*  */
+/* adaptive */
+
+@media (max-width: 1440px){
+  .Footer{
+    width: 80%;
+  }
+  .little-foot{
+    column-gap: 3em;
+  }
+  
+}
+
+@media (max-width: 1380px){
+  .little-foot{
+    column-gap: 2.7em;
+  }
+}
+@media (max-width: 1356px){
+  .little-foot{
+    column-gap: 2.5em;
+  }
+}
+@media (max-width: 1336px){
+  .little-foot{
+    column-gap: 2.34em;
+  }
+}
+@media (max-width: 1316px){
+  .little-foot{
+    column-gap: 2.17em;
+  }
+}
+@media (max-width: 1296px){
+  .little-foot{
+    column-gap: 1.5em;
+  }
+}
+
+@media (max-width: 1024px){
+  .city-input{
+    width: 80%;
+  }
+}
+
+@media (max-width: 924px){
+  .BgLeft__Header{
+    margin-left: 0px;
+  }
+  .BgLeft__Main{
+    margin-left: -65px;
+  }
+  .Footer{
+    margin-left: 20px;
+  }
+  .city-input{
+    width: 75%;
+  }
+  
+  
+}
+
+@media (max-width: 744px){
+  .BgLeft{
+    width: 50%;
+  }
+  .BgRight{
+    width: 50%;
+  }
+  .line5{
+    margin-left: 5px;
+  }
+  .line5-div{
+    margin-left: 44px;
+  }
+}
+
+@media (max-width: 676px){
+  .App{
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  
+  .BgLeft{
+    width: 100%;
+  }
+  .BgRight{
+    width: 100%;
+  }
+
+
+}

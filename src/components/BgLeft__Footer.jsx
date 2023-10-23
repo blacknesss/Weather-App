@@ -31,7 +31,7 @@ function BgLeft__Footer() {
                 <img src={group} alt="t" />
                 <h1 className='up'>Sun</h1>
             </div>
-            <div className="container-f">
+            <div className="container-f dis">
                 <h1 className='up'>24°C</h1>
                 <img src={group} alt="t" />
                 <h1 className='up'>Mon</h1>
